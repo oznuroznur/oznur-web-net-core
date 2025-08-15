@@ -1,0 +1,8 @@
+| ASP.NET Razor Pages                   | React / Next.js karşılığı                       |
+| ------------------------------------- | ----------------------------------------------- |
+| `public class IndexModel : PageModel` | `function IndexPage() { ... }` component tanımı |
+| `public List<Project> Projects`       | `const [projects, setProjects] = useState([])`  |
+| `OnGet()` metodu                      | `useEffect(() => { ... }, [])`                  |
+| `Projects = ProjectStore.All;`        | `setProjects(ProjectStore.All)`                 |
+| `@Model.Projects`                     | `{projects.map(...)}`                           |
+| `ProjectStore` (static data provider) | Bir JS dosyasında export edilen data array      |

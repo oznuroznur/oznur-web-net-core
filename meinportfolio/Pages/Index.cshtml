@@ -1,0 +1,18 @@
+﻿@page
+@model meinportfolio.Pages.IndexModel
+@{
+  ViewData["Title"] = "Öznur Öznur";
+}
+
+<section id="about" class="border-b-4 border-green-400 p-6 ">
+  <partial name="~/Pages/Partials/_AboutSection.cshtml" />
+</section>
+<section id="projects" class="border-b-4 border-green-400 p-6">
+  <partial name="~/Pages/Partials/_ProjectSection.cshtml" model="Model.Projects" />
+</section>
+  <section id="resume" class="border-b-4 border-green-400 p-6">
+  <partial name="~/Pages/Partials/_ResumeSection.cshtml" />
+</section>
+<section id="contact" class="p-6">
+    <partial name="~/Pages/Partials/_ContactSection.cshtml" />
+</section>

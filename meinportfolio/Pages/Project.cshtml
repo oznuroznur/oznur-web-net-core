@@ -1,0 +1,19 @@
+@page "/project/{slug}"
+@model meinPortfolio.Pages.ProjectModel
+@{
+    ViewData["Title"] = Model.Project?.Title ?? "Project";
+}
+
+<section class="max-w-3xl mx-auto p-6">
+  <a href="/" class="text-sm underline">← back</a>
+  <h1 class="text-3xl font-bold mt-2">@Model.Project!.Title</h1>
+  <p class="mt-3">@Model.Project.Description</p>
+  <p class="mt-3 text-sm">Stack: @string.Join(" · ", Model.Project.Stack)</p>
+
+  <div class="mt-4 flex gap-3 flex-wrap">
+    @if (!string.IsNullOrWhiteSpace(Model.Project.DemoUrl))
+    { <a class="border px-3 py-1" href="@Model.Project.DemoUrl" target="_blank" rel="noopener">SEE</a> }
+    @if (!string.IsNullOrWhiteSpace(Model.Project.RepoUrl))
+    { <a class="border px-3 py-1" href="@Model.Project.RepoUrl" target="_blank" rel="noopener">CODE</a> }
+  </div>
+</section>

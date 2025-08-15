@@ -1,0 +1,69 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = meinportfolio
+build_property.RootNamespace = meinportfolio
+build_property.ProjectDir = C:\Users\oznuroznur\Desktop\projects\.net\meinportfolio\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\oznuroznur\Desktop\projects\.net\meinportfolio
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/Partials/_AboutSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydGlhbHNcX0Fib3V0U2VjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/Partials/_ContactSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydGlhbHNcX0NvbnRhY3RTZWN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/Partials/_ProjectSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydGlhbHNcX1Byb2plY3RTZWN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/Partials/_ResumeSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFydGlhbHNcX1Jlc3VtZVNlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/Project.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oznuroznur/Desktop/projects/.net/meinportfolio/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-q8uwsmdo1i
