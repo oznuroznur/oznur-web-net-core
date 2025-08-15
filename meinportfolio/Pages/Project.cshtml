@@ -1,19 +1,64 @@
 @page "/project/{slug}"
-@model meinPortfolio.Pages.ProjectModel
+@model ProjectDetailModel
 @{
-    ViewData["Title"] = Model.Project?.Title ?? "Project";
+  var p = Model.Project;
 }
+<div class="max-w-6xl mx-auto py-5">
+  <a href="/" class="btn-bg w-10">←</a>
+  <section class="max-w-5xl mx-auto py-5">
+    <div class="border-2 border-white bg-gray-900 relative">
+      <div class="border-b-2 border-white p-4 bg-green-400 text-black">
+        <h1 class="text-2xl font-bold">@p.Title</h1>
+      </div>
+      <div class="p-6 pb-20">
+        @if (!string.IsNullOrEmpty(p.ImageUrl))
+        {
+          <img src="@p.ImageUrl" alt="@p.Title" class="w-full h-64 object-cover border-2 border-white mb-4" />
+        }
+        @if (p.Gallery != null && p.Gallery.Length > 0)
+        {
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            @foreach (var img in p.Gallery)
+            {
+              <img src="@img" alt="@p.Title" class="w-full h-48 object-cover border-2 border-white" />
+            }
+          </div>
+        }
+        <p class="mb-4 leading-relaxed">
+          @p.Description
+        </p>
 
-<section class="max-w-3xl mx-auto p-6">
-  <a href="/" class="text-sm underline">← back</a>
-  <h1 class="text-3xl font-bold mt-2">@Model.Project!.Title</h1>
-  <p class="mt-3">@Model.Project.Description</p>
-  <p class="mt-3 text-sm">Stack: @string.Join(" · ", Model.Project.Stack)</p>
-
-  <div class="mt-4 flex gap-3 flex-wrap">
-    @if (!string.IsNullOrWhiteSpace(Model.Project.DemoUrl))
-    { <a class="border px-3 py-1" href="@Model.Project.DemoUrl" target="_blank" rel="noopener">SEE</a> }
-    @if (!string.IsNullOrWhiteSpace(Model.Project.RepoUrl))
-    { <a class="border px-3 py-1" href="@Model.Project.RepoUrl" target="_blank" rel="noopener">CODE</a> }
-  </div>
-</section>
+        @if (p.BulletPoints != null && p.BulletPoints.Length > 0)
+        {
+          <ul class="list-disc ml-5 mb-4 text-sm leading-relaxed">
+            @foreach (var point in p.BulletPoints)
+            {
+              <li>@point</li>
+            }
+          </ul>
+        }
+        <div class="mb-4">
+          <span class="text-green-400 font-bold">STACK:</span>
+          <code class="ml-2">@string.Join(" · ", p.Stack)</code>
+        </div>
+      </div>
+      <div class="absolute bottom-4 left-0 w-full px-6 flex flex-wrap items-center gap-2">
+        @if (!string.IsNullOrEmpty(p.DemoUrl))
+        {
+          <a href="@p.DemoUrl" target="_blank" class="btn-bg">SEE LIVE</a>
+        }
+        @if (!string.IsNullOrEmpty(p.RepoUrl))
+        {
+          <a href="@p.RepoUrl" target="_blank" class="btn-bg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+            Private_Repository_Contact_for_Access</a>
+        }
+      </div>
+    </div>
+  </section>
+</div>

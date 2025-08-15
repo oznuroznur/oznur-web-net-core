@@ -1,20 +1,17 @@
-
-
-using meinPortfolio.Data;
-using meinPortfolio.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using meinPortfolio.Data;
+using meinPortfolio.Models;
 
-namespace meinPortfolio.Pages;
-
-public class ProjectModel : PageModel
+public class ProjectDetailModel : PageModel
 {
-    [FromRoute] public string Slug { get; set; } = default!;
-    public Project? Project { get; private set; }
+    public Project Project { get; set; }
 
-    public IActionResult OnGet()
+    public IActionResult OnGet(string slug)
     {
-        Project = ProjectStore.Find(Slug);
-        return Project is null ? NotFound() : Page();
+        var found = ProjectStore.Find(slug);
+        if (found == null) return NotFound();
+        Project = found;
+        return Page();
     }
 }

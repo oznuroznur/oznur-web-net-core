@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -24,4 +23,29 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities{
+   .btn {
+    @apply inline-flex items-center gap-2 border-2 border-white px-3 py-1 w-full sm:w-auto text-sm md:text-base hover:bg-white hover:text-black
+  }
+  .btn-bg {
+    @apply border-2 border-white px-3 py-1 flex items-center gap-2 hover:bg-white hover:text-black hover:bg-none transition-none text-center text-sm md:text-base bg-[url('/assets/banner-bg.png')] bg-cover bg-center;
+  }
+}
+
+@layer components {
+  .card {
+    @apply border-2 border-white bg-gray-900 rounded;
+  }
+  .card-head {
+    @apply border-b-2 border-white p-4 bg-green-400 text-black rounded-t;
+  }
+  .card-body {
+    @apply p-6;
+  }
+ 
+  .tag {
+    @apply inline-flex items-center rounded border border-white/40 px-2 py-1 text-xs text-white/90;
+  }
 }
